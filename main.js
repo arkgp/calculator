@@ -4,6 +4,7 @@ let displayValue = "";
 const numbers = document.querySelectorAll('.numbers');
 const erase = document.querySelector('#erase');
 const deleteButton = document.querySelector('#delete');
+const operators = document.querySelectorAll('.operator');
 
 function add(num1, num2) {
     return num1 + num2;
@@ -60,6 +61,9 @@ erase.addEventListener('click', function() {
     displayValue = "0";
     display();
     displayValue = "";
+
+    const operationDisplay = document.querySelector('#current-equation div');
+    operationDisplay.textContent = "";
 });
 
 deleteButton.addEventListener('click', function() {
@@ -73,3 +77,12 @@ deleteButton.addEventListener('click', function() {
         displayValue = "";
     }
 });
+
+operators.forEach( (operator) => {
+    operator.addEventListener('click', function() {
+        const operationDisplay = document.querySelector('#current-equation div');
+        const userInput = document.querySelector('#user-input div');
+
+        operationDisplay.textContent += userInput.textContent + ` ${operator.textContent}`;
+    });
+} );
