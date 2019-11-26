@@ -1,0 +1,117 @@
+#calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+
+    height: 400px;
+    width: 300px;
+    padding: 3px;
+
+    grid-template-areas: 
+        "Display Display Display Display"
+        "Erase Delete Divide Multiply"
+        "Seven Eight Nine Addition"
+        "Four Five Six Substract"
+        "One Two Three Equal"
+        "Zero Zero Period Equal";
+
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    
+    text-align: center;
+    box-shadow: 1px 1px 5px #020b13;
+    background-color: #f1f1f1;
+    color: #313d4b;
+    opacity: 0.9;
+
+    border: 1px solid #313d4b;
+}
+
+html, body {
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    border: 1px solid #b8b8b9;
+}
+
+#display {
+    grid-area: Display;
+}
+
+#erase {
+    grid-area: Erase;
+}
+
+#delete {
+    grid-area: Delete;
+}
+
+#divide {
+    grid-area: Divide;
+}
+
+#multiply {
+    grid-area: Multiply;
+}
+
+#seven {
+    grid-area: Seven;
+}
+
+#eight {
+    grid-area: Eight;
+}
+
+#nine {
+    grid-area: Nine;
+}
+
+#addition {
+    grid-area: Addition;
+}
+
+#four {
+    grid-area: Four;
+}
+
+#five {
+    grid-area: Five;
+}
+
+#six {
+    grid-area: Six;
+}
+
+#substract {
+    grid-area: Substract;
+}
+
+#one {
+    grid-area: One;
+}
+
+#two {
+    grid-area: Two;
+}
+
+#three {
+    grid-area: Three;
+}
+
+#equal {
+    grid-area: Equal;
+}
+
+#zero {
+    grid-area: Zero;
+}
+
+#period {
+    grid-area: Period;
+}
