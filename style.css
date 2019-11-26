@@ -38,10 +38,19 @@ html, body {
 
     font-weight: 700;
     border: 1px solid #b8b8b9;
+
+    user-select: none;
 }
 
 #display {
     grid-area: Display;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3px 10px;
 }
 
 #erase {
@@ -114,4 +123,20 @@ html, body {
 
 #period {
     grid-area: Period;
+}
+
+#user-input {
+    flex-basis: 65%;
+    width: 100%;
+}
+
+#current-equation {
+    flex-basis: 35%;
+    width: 100%;
+}
+
+.display-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
