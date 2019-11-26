@@ -1,7 +1,7 @@
 #calculator {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: 22% auto auto auto auto;
 
     height: 400px;
     width: 300px;
@@ -29,6 +29,9 @@
 
 html, body {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-container {
@@ -51,6 +54,9 @@ html, body {
     align-items: center;
 
     padding: 3px 10px;
+
+    font-weight: 700;
+    user-select: none;
 }
 
 #erase {
